@@ -50,7 +50,7 @@ class Post
     #[ORM\Column]
     private ?\DateTimeImmutable $published_at = null;
 
-    #[ORM\ManyToOne(inversedBy: 'posts')]
+    #[ORM\ManyToOne(inversedBy: 'posts', )]
     private ?Category $category = null;
 
     /**
